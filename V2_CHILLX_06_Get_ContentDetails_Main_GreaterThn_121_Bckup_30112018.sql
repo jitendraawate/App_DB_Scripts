@@ -64,7 +64,7 @@ BEGIN
 	Where [user_id] IN (Select [user_id] from atom_userdetails_x where regid = @REGID)
 		  AND isSuccess = 1 AND purchtype In ('PPD','Paytm')
 
-    ----------------------Added on 17Nov18 tO Show series_description---------
+    ----------------------Added on 17 Nov18 tO Show series_description---------
 
     Select @Series_Id=Series_Id
 	From Atom_Content_Approved
